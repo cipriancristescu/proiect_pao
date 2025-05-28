@@ -1,4 +1,4 @@
-## Proiect PAO - Adăpost de Animale
+# Proiect PAO - Adăpost de Animale
 
  Descriere generală
 
@@ -10,7 +10,7 @@ Etapa II: Persistența datelor în baza de date (SQLite) și auditarea acțiunil
 
 # Etapa I – Definirea și modelarea sistemului
 
-  Obiecte definite (cel puțin 8):
+  ## Obiecte definite (cel puțin 8):
 
 Animal (abstract)
 
@@ -28,7 +28,7 @@ Adoptie
 
 Persoana (abstract)
 
-  Acțiuni / Interogări posibile (minim 10):
+  ## Acțiuni / Interogări posibile (minim 10):
 
 Adăugare animal
 
@@ -50,7 +50,7 @@ Istoric adopții
 
 Listare donații
 
-   Specificații tehnice:
+   ## Specificații tehnice:
 
 Clase cu atribute private/protected și metode getter/setter
 
@@ -64,7 +64,7 @@ Clasă Main cu apeluri către serviciu și simularea acțiunilor
 
 # Etapa II – Persistență și Audit
 
-  Bază de date relațională:
+ ## Bază de date relațională:
 
 Tehnologie: SQLite, fișier: adapost.db
 
@@ -74,13 +74,13 @@ Operații CRUD pentru 4+ clase: Animal, Adoptant, Adoptie, Donatie, Angajat
 
 DAO-uri (Data Access Object) pentru fiecare entitate: AnimalDAO, AdoptantDAO, etc.
 
-   Servicii singleton:
+   ## Servicii singleton:
 
 Serviciile de acces la bază de date sunt implementate ca singleton
 
 ConnectionManager pentru conexiune unică și reutilizabilă
 
-` Audit:
+## Audit:
 
 Fiecare acțiune relevantă (ex: adăugare, filtrare, adopție) este logată într-un fișier audit.csv
 
